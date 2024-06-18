@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/SimboloIPOtittle- Copia.png" type="image/x-icon">
+    
+    <title>Colégio IPO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--css-bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--js-bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+    <!--stylesheets-->
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <!--navbar-desktop-->
+        <div class="navbar-desktop">
+            <a href="index.html" class="logo">
+                <img src="img/IPO logo.png" alt="Colegio IPO logo" class="logo-img">
+                Colégio IPO
+            </a>
+            <nav class="menu">
+                <a href="#home" class="actived">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#estrutura">Estrutura</a>
+                <a href="#serviços">Serviços</a>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Contato
+                </button>
+  
+            </nav>
+        </div>
+
+        <!--navbar-mobile-->
+        <!--banner-->
+        <div class="banner-mobile">
+            <div class="logo">
+                <img src="img/IPO logo.png" alt="Colegio IPO logo" class="logo-img">
+                Colégio IPO
+            </div>
+            <button class="open-menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <!--menu-->
+        <nav class="menu-mobile hidden">
+            <a href="#home" class="actived">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#estrutura">Estrutura</a>
+            <a href="#serviços">Serviços</a>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Contato
+            </button>
+            <button class="close-menu">FECHAR</button>
+        </nav>
+    </header>
+
+    <!--topics-->
+    <main>
+        <!--home-->
+        <section id="home" class="topic">
+            <div class="home-conteudo">
+                <h1>VENHA SER UM IPONIANO!</h1>
+                <p>Venha fazer parte do Colégio IPO</p>
+                <p>e transforme seu futuro com educação de qualidade!</p>
+            </div>
+        </section>
+
+        <!--sobre-->
+        <section id="sobre" class="topic">
+            <div class="sobre-container">
+                <div class="sobre-imagem">
+                    <img src="img/sobreimage.png" alt="">
+                </div>
+
+                <div class="sobre-conteudo">
+                    <h1><span style="color: orangered;">Colégio IPO</span>, onde a excelência educacional é nossa maior paixão.</h1>
+
+                    <p>Bem-vindo ao <span style="color: orangered;"> Colégio IPO </span>, temos o prazer de enfatizar que somos o melhor colégio de Várzea Grande-MT. Devido as nossas metodologias únicas e especiais, trabalhamos duro para sempre buscar o melhor de nossos alunos, nosso principal objetivo é preparar nossos alunos para o mundo profissional e dar aquele UP no desempenho do seu filho. </p>
+
+                    <p>Nossos professores são altamente capacitados e dedicados, comprometidos em inspirar o potencial máximo de cada aluno. No Colégio IPO, cultivamos não apenas o conhecimento, mas também valores como respeito, ética e responsabilidade.</p>
+
+                    <p>Nossa jornada começou com o renomado IPO+ Concursos e graças a demanda crescente dos pais que buscavam a mesma qualidade de ensino para seus filhos, nos tornamos o Colégio IPO.</p>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn learn-more" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+            </button>
+        </section>
+        
+        <!--estrutura-->
+        <section id="estrutura" class="topic">
+            <!--
+        <div class="carousel-header">
+            <h1>Conheça nossa estrutura</h1>
+        </div>
+        -->
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img">
+                            <img src="img/IPO frente 1.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO frente 2.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO espaço verde.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO corredor externo.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO sala 1.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO sala 2.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="img">
+                            <img src="img/IPO sala 3.jpeg" alt="" d-inline-block>
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+          
+        <!--serviços-->
+        <section id="serviços" class="topic">
+            <div class="servicos-container">
+                <div class="servicos-conteudo">
+                    <h1>Temos os melhores serviços da região</h1>
+
+                    <p>Oferecemos uma variedade de serviços educacionais que atendem às necessidades de nossos alunos. </p>
+                    
+                    <p>Desde aulas preparatórias até atividades extracurriculares, nosso objetivo é proporcionar uma educação completa e de alta qualidade. </p>
+                    
+                    <p>Com uma equipe de profissionais dedicados e uma estrutura moderna, garantimos o melhor ambiente para o desenvolvimento dos nossos alunos.</p>
+                </div>
+
+                <div class="servicos-imagem">
+                    <img src="img/outrafrente.jpg" alt="Serviços do Colégio IPO">
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn learn-more" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+            </button>
+        </section>
+
+        <!--contato
+        <section id="contato" class="topic">
+            <form class="form" action="https://api.staticforms.xyz/submit" method="post">
+                <h1>Contate-nos</h1>
+
+                <div class="nome">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required/>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Digite seu email" required/>
+                </div>
+
+                <div class="message">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" placeholder="Informe-nos sobre suas duvidas"></textarea>
+                </div>
+
+                <input type="hidden" name="accessKey" value="">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        -->
+
+        <div class="whats">
+            <a href="https://wa.me/556530293131?text=Olá, gostaria de tirar uma dúvida" target="_blank">
+                <img src="img/whatsapp.png" width="65" alt="Fale Conosco pelo whatsapp" title="Fale Conosco pelo whatsapp">
+            </a>
+        </div>    
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!--
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                -->
+                <form class="modal-body form" action="https://api.staticforms.xyz/submit" method="post">
+                    <!--<h1>Contate-nos</h1>-->
+    
+                    <div class="inputs-form">
+                        <!--nome para contato-->
+                        <div class="input-form">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" placeholder="Digite seu nome" required/>
+                        </div>
+    
+                        <!--endereço para retorno-->
+                        <div class="input-form">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" placeholder="Digite seu email" required/>
+                        </div>
+    
+                        <!--entrada de texto-->
+                        <div class="input-form">
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" placeholder="Informe-nos sobre suas duvidas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!--validação-->
+                    <div class="validation-form">
+                        <input type="hidden" name="accessKey" value="">
+                        <button type="submit" class="btn btn-secondary send">Enviar</button>
+                        <button type="button" class="btn btn-secondary cancel" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <!--footer-desktop-->
+        <div class="footer-desktop">
+
+            <!--top-footer-->
+            <div class="top-footer">
+
+                <!--brand-->
+                <a href="index.html" class="logo">
+                    <img src="img/IPO logo.png" alt="Colegio IPO logo" class="logo-img">
+                    Colégio IPO
+                </a>
+
+                <!--socials-->
+                <nav class="socials">
+                    <a href="https://www.facebook.com/colegioipomais/"><i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="https://www.instagram.com/ipomaisconcursos/"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://www.youtube.com/@ColegioIPO"><i class="fa-brands fa-youtube"></i></a>
+
+                    <a href="https://www.tiktok.com/@colegioipo?lang=pt-BR"><i class="fa-brands fa-tiktok"></i></a>
+                </nav>
+            </div>
+
+            <!--bottom-footer-->
+            <div class="bottom-footer">
+                Colégio IPO © 2024 | Todos os direitos reservados
+            </div>
+        </div>
+
+        <!--footer-mobile-->
+        <div class="footer-mobile">
+
+            <!--top-footer-->
+            <div class="top-footer">
+
+                <!--brand-->
+                <a href="index.html" class="logo">
+                    <img src="img/IPO logo.png" alt="Colégio IPO logo" class="logo-img">
+                    Colégio IPO
+                </a>
+
+                <!--socials-->
+                <nav class="socials">
+                    <a href="https://www.facebook.com/colegioipomais/"><i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="https://www.instagram.com/ipomaisconcursos/"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://www.youtube.com/@ColegioIPO"><i class="fa-brands fa-youtube"></i></a>
+
+                    <a href="https://www.tiktok.com/@colegioipo?lang=pt-BR"><i class="fa-brands fa-tiktok"></i></a>
+                </nav>
+            </div>
+
+            <!--bottom-footer-->
+            <div class="bottom-footer">
+                Colégio IPO © 2024 | Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script/navbar.js"></script>
+    <script src="src/script/rolagem.js"></script> 
+</body>
+</html>

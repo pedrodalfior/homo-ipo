@@ -1,0 +1,138 @@
+@import url("geral.css");
+
+/* Estilos para o footer */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 4vh 8vw;
+
+    background: rgb(0, 0, 0);
+}
+
+/*footer-interfaces*/
+.footer-desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2vh;
+    align-items: center;
+
+    padding: 4vh 8vw;
+}
+.footer-desktop .logo{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 800;
+
+    text-decoration: inherit;
+
+    color: white
+}
+.footer-mobile{
+    display: none;
+}
+
+/*foote-divisions*/
+
+    /*top-footer*/
+.top-footer {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+.top-footer .logo {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+}
+.top-footer .logo .logo-img {
+    place-items: center;
+    width: 52px;
+}
+.top-footer .logo .logo-title {
+    place-items: center;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+.top-footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+}
+.top-footer .socials a {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: .3s;
+}
+.top-footer .socials a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+    /*bottom-footer*/
+.bottom-footer {
+    display: flex;
+    place-items: center;
+
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*responsividade*/
+@media (max-width: 1080px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+        align-items: center;
+    
+        padding: 4vh 8vw;
+    }
+    .footer-mobile .logo{
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        align-items: center;
+    
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 800;
+    
+        text-decoration: inherit;
+    
+        color: white
+    }
+    .top-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+        align-items: center;
+    }
+    .footer-mobile .socials{
+        display: flex;
+        justify-content: center;
+        gap: 12vw;
+    }
+    .footer-mobile .socials a{
+        font-size: 24px;
+    }
+}
+

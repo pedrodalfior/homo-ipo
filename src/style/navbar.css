@@ -1,0 +1,226 @@
+@import url("geral.css");
+
+/*navbar*/
+.navbar-desktop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4vh 8vw;
+
+    backdrop-filter: blur(4px);
+    transition: .4s;
+    z-index: 2;
+}
+.banner-mobile, .menu-mobile{
+    display: none;
+}
+
+/*class for scroll*/
+.scroll{
+    transform: translate3d(0, -100%, 0);
+}
+.navbg{
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(80%);
+}
+
+/*navbar logo*/
+.navbar-desktop .logo{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 800;
+
+    text-decoration: inherit;
+
+    color: white
+}
+.navbar-desktop .logo .logo-img{
+    place-items: center;
+    width: 56px;
+}
+
+/*navbar menu*/
+.navbar-desktop .menu{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+.navbar-desktop .menu a{
+    place-items: center;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: inherit;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: .3s;
+}
+.navbar-desktop .menu button{
+    border: none;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.6);
+    background: none;
+
+    transition: .3s;
+}
+.navbar-desktop .menu .actived{
+    color: white;
+}
+.navbar-desktop .menu a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-desktop .menu a:active{
+    transform: scale(.9);
+    transition: 0s linear;
+}
+.navbar-desktop .menu button:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+/*responsividade*/
+@media (max-width: 1080px){
+    .navbar-desktop{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vh;
+    }
+}
+@media (max-width: 780px){
+    /*navbar*/
+    .navbar-desktop{
+        display: none;
+    }
+    .banner-mobile, .menu-mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+
+        padding: 5vh 10vw;
+
+        backdrop-filter: blur(4px);
+
+        transition: .4s;
+        z-index: 2;
+    }
+
+    /*navbar banner*/
+    .banner-mobile{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner-mobile .logo{
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        align-items: center;
+
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 800;
+
+        color: white;
+    }
+    .banner-mobile .logo .logo-img{
+        place-items: center;
+        width: 52px;
+    }
+
+    /*menu*/
+    .menu-mobile{
+        min-height: 50vh;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background: rgba(0, 0, 0, 0.8 );
+        backdrop-filter: blur(80%);
+    }
+    .menu-mobile a, .menu-mobile .btn{
+        place-items: center;
+
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: inherit;
+
+        color: rgba(255, 255, 255, 0.6);
+
+        transition: .3s;
+    }
+    .menu-mobile a:hover, .menu-mobile .btn:hover{
+        background: none;
+        color: rgba(255, 255, 255, 1);
+    }
+    .menu-mobile a:active{
+        transform: scale(.9);
+        transition: 0s linear;
+    }
+
+    /*buttons*/
+    .banner-mobile button, .menu-mobile button{
+        border: 0;
+        border-radius: 12px;
+
+        padding: .6rem 1rem;
+
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        color: white;
+        background: transparent;
+
+        transition: .3s;
+    }
+    .banner-mobile button:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    .menu-mobile button:hover{
+        color: rgb(255, 120, 0);
+        cursor: pointer;
+    }
+    .banner-mobile button:active, .menu-mobile button:active{
+        transform: scale(.9);
+        transition: 0s linear;
+    }
+
+    /*class*/
+    .hidden{
+        transform: translate3d(0, -100%, 0);
+    }
+}

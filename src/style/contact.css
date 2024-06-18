@@ -1,0 +1,108 @@
+@import url("geral.css");
+
+.modal-content{
+    background: url(/IPOproj/IPOpage/img/Design\ sem\ nome\ \(1\).png);
+    padding: 4vh 4vw;
+}
+.form{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+}
+.form h1{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+.form .inputs-form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    align-items: start;
+}
+.form .inputs-form .input-form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    align-items: start;
+}
+.form .inputs-form .input-form label{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+.form .inputs-form .input-form input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+
+    background: rgba(255, 255, 255, 0.2);
+}
+.form .inputs-form .input-form textarea{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+
+    background: rgba(255, 255, 255, 0.2);
+}
+.form .validation-form{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .validation-form .send{
+    border: solid;
+    border-color: orangered;
+    background: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: orangered;
+
+    transition: .3s;
+}
+.form .validation-form .send:hover{
+    background: orangered;
+    color: white;
+}
+.form .validation-form .cancel{
+    border: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: .3s;
+}
+.form .validation-form .cancel:hover{
+    color: rgba(255, 255, 255, 1);
+}

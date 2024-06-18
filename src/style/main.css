@@ -1,0 +1,271 @@
+@import url("geral.css");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+
+a {
+    color: currentColor;
+    text-decoration: inherit;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    background: none; /* Remove a imagem de fundo */
+    background-color: black; /* Define a cor de fundo como preta */
+    padding: 12vh 8vw;
+}
+#home{
+    background-image: url('bannermobile.png'); /* Adiciona a extensão */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; /* Garante que a imagem de fundo esteja posicionada no topo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Garante que a seção ocupe pelo menos a altura da tela */
+    padding: 0; /* Remove padding para evitar a barra de rolagem */
+    margin: 0; /* Remove margens adicionais */
+    color: white; /* Ajusta a cor do texto para melhor visibilidade */
+    overflow: hidden; /* Evita a barra de rolagem */
+}
+.home-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;
+    margin: 0; /* Remove margens adicionais */
+}
+.home-conteudo h1, .home-conteudo p {
+    font-family: 'League Spartan', sans-serif; /* Aplica a fonte League Spartan */
+    font-weight: 700; /* Garante que o peso 700 seja usado para negrito */
+}
+.home-conteudo h1 {
+    font-size: 55px; /* Ajuste o tamanho conforme necessário */
+    font-weight: 700;
+    color: rgb(0, 0, 0); /* Ajuste a cor conforme necessário */
+    position: relative; /* Define o posicionamento relativo */
+    top: -80px; /* Move o h1 30 pixels para cima */
+    margin-bottom: 20px; /* Espaçamento entre h1 e p */
+}
+
+.home-conteudo p {
+    font-size: 34px; /* Ajuste o tamanho conforme necessário */
+    font-weight: 600;
+    color: rgb(0, 0, 0); /* Ajuste a cor conforme necessário */
+    margin: 0; /* Remove margens adicionais */
+}
+/*sobre*/
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: end;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+}
+
+/*sobre-img*/
+.sobre-imagem {
+    display: flex;
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/*sobre-conteudo*/
+.sobre-conteudo {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+    text-align: justify;
+}
+
+.sobre-conteudo h1 {
+    color: orangered;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sobre-conteudo p {
+    color: white;
+    font-size: 16px;
+}
+
+/*serviços*/
+#serviços {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: start;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+}
+
+/*serviços-img*/
+.servicos-imagem {
+    display: flex;
+    flex: 2;
+}
+
+.servicos-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/*serviços-conteudo*/
+.servicos-conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+    text-align: justify;
+}
+
+.servicos-conteudo h1 {
+    color: orangered;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.servicos-conteudo p {
+    color: white;
+    font-size: 16px;
+}
+
+/*estrutura*/
+#estrutura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+}
+
+/*.carousel-header, .carousel-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}*/
+
+.carousel-item {
+    height: auto;
+    width: 100%;
+}
+
+.carousel-item .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 10vw;
+}
+
+.carousel-item .img img {
+    height: auto;
+    width: 60vw;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+/*Learn-More*/
+.learn-more {
+    border: solid;
+    border-color: orangered;
+    background: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: orangered;
+    transition: .3s;
+}
+
+.learn-more:hover {
+    background: orangered;
+    color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1080px) {
+    #home {
+        background-image: url('bannermobile.png'); /* Adiciona a extensão */
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @media (max-width: 768px) {
+        .home-conteudo h1 {
+            font-size: 40px; /* Reduz o tamanho do h1 para dispositivos móveis */
+            top: -100px; /* Ajusta a posição do h1 para dispositivos móveis */
+            margin-top: -30px; /* Move o h1 mais para cima */
+        }
+    
+        .home-conteudo p {
+            font-size: 24px; /* Reduz o tamanho do p para dispositivos móveis */
+            margin-top: -75px; /* Move o p mais para cima */
+        }
+        
+        .home-conteudo p + p {
+            margin-top: -10px; /* Reduz o espaçamento entre os dois parágrafos */
+        }
+    }
+    .home-conteudo p:last-child {
+        margin-top: -10px; /* Ajusta o último parágrafo para ter o mesmo espaçamento */
+    }
+    
+    .sobre-container {
+        flex-direction: column;
+    }
+    
+    .sobre-imagem, .sobre-conteudo {
+        flex: none;
+        width: 100%;
+    }
+
+    #serviços {
+        align-items: end;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+    }
+    
+    .servicos-imagem, .servicos-conteudo {
+        flex: none;
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+        height: 80vh;
+    }
+}
