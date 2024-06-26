@@ -1,7 +1,7 @@
 @import url("geral.css");
 
 .modal-content{
-    background: url(/img/bgblack.png);
+    background: url(bgblack.png);
     padding: 4vh 4vw;
 }
 .form{
